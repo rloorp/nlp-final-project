@@ -1,3 +1,5 @@
+## NLP Final project
+
 ## Introduction
 In this project, the goal is to leverage the Enron Email Dataset to generate fictional stories based on the existing context within the emails. The aim is to extract meaningful insights from the email interactions and transform them into coherent narratives.
 
@@ -52,7 +54,11 @@ If someone has been involved before getting hired by another person who was also
 
 Maybe nobody ever gets paid enough money!!
 
-##References
+## Conclusions
+
+Using models such as distilbert and gpt-2 for text generation based on corporate emails yields promising results, however, there are shortcomings when it comes to recognizing the content of the email, which is why it is recommended to further analyze the data cleaning algorithms.
+
+## References
 - openai-community/gpt2 · Hugging Face. (n.d.). https://huggingface.co/openai-community/gpt2
 - DistilBERT. (n.d.). https://huggingface.co/docs/transformers/model_doc/distilbert
 - Bondarenko, P. (2024, July 29). Enron scandal | Summary, Explained, History, & Facts. Encyclopedia Britannica. https://www.britannica.com/event/Enron-scandal
