@@ -30,6 +30,10 @@ Using the NLTK library, tokenization is performed, breaking down the emails into
 ### Topic Modeling with Latent Dirichlet Allocation (LDA)
 To extract latent topics from the emails, a Latent Dirichlet Allocation (LDA) model is employed, organizing the emails into 5 primary topics. The text is vectorized using CountVectorizer, transforming the words into a numerical matrix. LDA then groups the most frequent words within each topic, allowing for an interpretation of the recurring themes in the dataset.
 
+<div style="text-align:center">
+<img src="./images/nlp1.png"/>
+</div>
+
 ### Embeddings with DistilBERT
 Once the emails are preprocessed, the DistilBERT model is used to obtain embeddings of the emails. These embeddings are numerical representations of the meaning of the emails and are processed in batches using a GPU to speed up computation. The embeddings are derived from the last hidden layer of DistilBERT, averaging all the words in the email. This allows the full semantics of each email to be captured in a feature vector.
 
@@ -38,6 +42,10 @@ With the embeddings generated, the K-Means algorithm is applied to cluster the e
 
 ### Interaction Analysis between Senders and Recipients
 The code also groups the emails by sender and recipient, showing the most frequent interactions between employees. This analysis provides insight into the most active work relationships within the company, which can be useful for understanding team dynamics.
+
+<div style="text-align:center">
+<img src="./images/nlp2.png"/>
+</div>
 
 ### Text Generation with GPT-2
 Finally, the GPT-2 language model is used to generate creative text. Starting from an initial prompt based on an office romance scenario, the model generates a continuation of the story. This is done by tokenizing the initial prompt, feeding it into the model, and decoding the generated response. Using GPT-2 allows you to create a fictional story based on the context and characters extracted from the emails, fulfilling the project’s goal of using natural language processing to generate narratives based on real-world data.
