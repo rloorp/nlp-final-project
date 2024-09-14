@@ -38,6 +38,20 @@ The code also groups the emails by sender and recipient, showing the most freque
 ### Text Generation with GPT-2
 Finally, the GPT-2 language model is used to generate creative text. Starting from an initial prompt based on an office romance scenario, the model generates a continuation of the story. This is done by tokenizing the initial prompt, feeding it into the model, and decoding the generated response. Using GPT-2 allows you to create a fictional story based on the context and characters extracted from the emails, fulfilling the project’s goal of using natural language processing to generate narratives based on real-world data.
 
+## Results
+
+A story about the interactions between employees in an office begins... 
+
+The first thing that happens is a lot of people start to talk and then they get very angry at each other for not doing something wrong with their colleagues' lives... 
+
+I think it's important we all understand what this means when you're working together as one company because if there are things going well but your boss doesn't do them properly he can be fired from his job immediately after having done some bad stuff.... 
+
+It makes sense why so many companies have these problems.... 
+
+If someone has been involved before getting hired by another person who was also part owner etc., how does anyone know where those relationships ended? And even though most managers don`T want any kind'relationship', sometimes just being around others will help keep everyone happy.. So let me ask my question.. What would happen without management? How could such situations occur?? Would our team members feel like "I am here" while still managing us?? Is every employee really responsible??? We should always take care of ourselves! But maybe no matter which way somebody goes out into business..... 
+
+Maybe nobody ever gets paid enough money!!
+
 ##References
 - openai-community/gpt2 · Hugging Face. (n.d.). https://huggingface.co/openai-community/gpt2
 - DistilBERT. (n.d.). https://huggingface.co/docs/transformers/model_doc/distilbert
