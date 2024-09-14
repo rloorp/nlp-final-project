@@ -25,9 +25,6 @@ DistilBERT is a small, fast, cheap and light Transformer model trained by distil
 ### Tokenization and Stopword Removal
 Using the NLTK library, tokenization is performed, breaking down the emails into individual words. Stopwords (common words like "the," "is," etc.) that don't add significant meaning are then removed. 
 
-### Topic Modeling with Latent Dirichlet Allocation (LDA)
-To extract latent topics from the emails, a Latent Dirichlet Allocation (LDA) model is employed, organizing the emails into 5 primary topics. The text is then vectorized, transforming the words into a numerical matrix. LDA then groups the most frequent words within each topic, allowing for an interpretation of the recurring themes in the dataset.
-
 <div style="text-align:center">
 <img src="./images/nlp1.png"/>
 </div>
