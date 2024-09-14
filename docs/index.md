@@ -21,8 +21,6 @@ GPT-2 is a transformer model pretrained on a large English corpus in a self-supe
 DistilBERT is a small, fast, cheap and light Transformer model trained by distilling BERT base. It has 40% less parameters than google-bert/bert-base-uncased, runs 60% faster while preserving over 95% of BERT’s performances as measured on the GLUE language understanding benchmark.
 
 ## Experiment
-### Dataset Loading and Preprocessing
-The email dataset is loaded from Google Drive using pandas. An initial inspection of the data is performed to verify correct loading. A function is applied to clean the email text field by removing quotes and lists that might interfere with processing. Emails shorter than 30 characters are filtered out to avoid irrelevant analysis, and common signatures like "Thank you" or "Best regards" are removed. This ensures that only the most relevant content remains for analysis.
 
 ### Tokenization and Stopword Removal
 Using the NLTK library, tokenization is performed, breaking down the emails into individual words. Stopwords (common words like "the," "is," etc.) that don't add significant meaning are then removed. This cleaning step is crucial to reduce noise in the model and focus on the keywords that define the content of the emails.
