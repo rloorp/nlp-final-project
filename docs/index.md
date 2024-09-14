@@ -23,20 +23,20 @@ DistilBERT is a small, fast, cheap and light Transformer model trained by distil
 ## Experiment
 
 ### Tokenization and Stopword Removal
-Using the NLTK library, tokenization is performed, breaking down the emails into individual words. Stopwords (common words like "the," "is," etc.) that don't add significant meaning are then removed. This cleaning step is crucial to reduce noise in the model and focus on the keywords that define the content of the emails.
+Using the NLTK library, tokenization is performed, breaking down the emails into individual words. Stopwords (common words like "the," "is," etc.) that don't add significant meaning are then removed. 
 
 ### Topic Modeling with Latent Dirichlet Allocation (LDA)
-To extract latent topics from the emails, a Latent Dirichlet Allocation (LDA) model is employed, organizing the emails into 5 primary topics. The text is vectorized using CountVectorizer, transforming the words into a numerical matrix. LDA then groups the most frequent words within each topic, allowing for an interpretation of the recurring themes in the dataset.
+To extract latent topics from the emails, a Latent Dirichlet Allocation (LDA) model is employed, organizing the emails into 5 primary topics. The text is then vectorized, transforming the words into a numerical matrix. LDA then groups the most frequent words within each topic, allowing for an interpretation of the recurring themes in the dataset.
 
 <div style="text-align:center">
 <img src="./images/nlp1.png"/>
 </div>
 
 ### Embeddings with DistilBERT
-Once the emails are preprocessed, the DistilBERT model is used to obtain embeddings of the emails. These embeddings are numerical representations of the meaning of the emails and are processed in batches using a GPU to speed up computation. The embeddings are derived from the last hidden layer of DistilBERT, averaging all the words in the email. This allows the full semantics of each email to be captured in a feature vector.
+Once the emails are preprocessed, the DistilBERT model is used to obtain embeddings of the emails. The embeddings are derived from the last hidden layer of DistilBERT, averaging all the words in the email. This allows the full semantics of each email to be captured in a feature vector.
 
 ### Clustering of Emails
-With the embeddings generated, the K-Means algorithm is applied to cluster the emails into 5 groups, each representing a topic or set of emails with similar semantics. K-Means helps identify hidden patterns and groups of emails that share common themes. In the end, a few emails from each cluster are displayed, making it easier to manually analyze the results.
+With the embeddings generated, the K-Means algorithm is applied to cluster the emails into 5 groups, each representing a topic or set of emails with similar semantics. K-Means helps identify hidden patterns and groups of emails that share common themes. 
 
 ### Interaction Analysis between Senders and Recipients
 The code also groups the emails by sender and recipient, showing the most frequent interactions between employees. This analysis provides insight into the most active work relationships within the company, which can be useful for understanding team dynamics.
@@ -46,7 +46,7 @@ The code also groups the emails by sender and recipient, showing the most freque
 </div>
 
 ### Text Generation with GPT-2
-Finally, the GPT-2 language model is used to generate creative text. Starting from an initial prompt based on an office romance scenario, the model generates a continuation of the story. This is done by tokenizing the initial prompt, feeding it into the model, and decoding the generated response. Using GPT-2 allows you to create a fictional story based on the context and characters extracted from the emails, fulfilling the project’s goal of using natural language processing to generate narratives based on real-world data.
+Finally, the GPT-2 language model is used to generate creative text. Starting from an initial prompt based on one of the clusters prevously obtained. This is done by tokenizing the initial prompt, feeding it into the model, and decoding the generated response. Using GPT-2 allows you to create a fictional story based on the context and characters extracted from the emails, fulfilling the project’s goal of using natural language processing to generate narratives based on real-world data.
 
 ## Results
 
