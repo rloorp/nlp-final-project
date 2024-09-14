@@ -37,3 +37,10 @@ The code also groups the emails by sender and recipient, showing the most freque
 
 ### Text Generation with GPT-2
 Finally, the GPT-2 language model is used to generate creative text. Starting from an initial prompt based on an office romance scenario, the model generates a continuation of the story. This is done by tokenizing the initial prompt, feeding it into the model, and decoding the generated response. Using GPT-2 allows you to create a fictional story based on the context and characters extracted from the emails, fulfilling the project’s goal of using natural language processing to generate narratives based on real-world data.
+
+##References
+- openai-community/gpt2 · Hugging Face. (n.d.). https://huggingface.co/openai-community/gpt2
+- DistilBERT. (n.d.). https://huggingface.co/docs/transformers/model_doc/distilbert
+- Bondarenko, P. (2024, July 29). Enron scandal | Summary, Explained, History, & Facts. Encyclopedia Britannica. https://www.britannica.com/event/Enron-scandal
+- The Enron email Dataset. (2016, June 16). Kaggle. https://www.kaggle.com/datasets/wcukierski/enron-email-dataset
+- Enron Clean dataset. (2020, June 15). Kaggle. https://www.kaggle.com/datasets/amank56/enron-clean-dataset/data
